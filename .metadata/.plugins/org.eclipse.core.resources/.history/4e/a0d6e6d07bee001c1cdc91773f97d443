@@ -1,0 +1,21 @@
+package com.codingdojo.projectone;
+
+public class Samurai extends Human{
+	private static int numOfSamurai = 0; 
+	public Samurai() {
+		super(3, 3, 3, 200);
+		numOfSamurai++;
+	}
+	public void deathBlow(Human human) {
+		int health = this.getHealth();
+		this.setHealth(health/2);
+		human.setHealth(0);
+	}
+	public void meditate() {
+		int health = this.getHealth();
+		this.setHealth(health*1.5);
+	}
+	public static int howMany() {
+		return numOfSamurai;
+	}
+}

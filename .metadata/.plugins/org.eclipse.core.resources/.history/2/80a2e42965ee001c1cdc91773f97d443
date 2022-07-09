@@ -1,0 +1,12 @@
+package com.codingdojo.projectone;
+
+public class Mammal {
+	private int energyLevel;
+	public int displayEnergy() {
+		System.out.println("The energy level is " + this.energyLevel);
+		return this.energyLevel;
+	}
+	public Mammal(int energyLevel) {
+		this.energyLevel = energyLevel;
+	}
+}

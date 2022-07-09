@@ -1,0 +1,14 @@
+package com.codingdojo.projectone;
+
+public class HumanTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Human ninja = new Human(3, 3, 3, 100);
+		Human samurai = new Human(3, 3, 3, 100);
+		ninja.attack(samurai);
+		ninja.attack(samurai);
+		System.out.println("The health of samurai will be at " + samurai.getHealth());
+	}
+
+}
